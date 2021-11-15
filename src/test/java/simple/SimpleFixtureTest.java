@@ -33,7 +33,8 @@ class SimpleFixtureTest {
 
     @BeforeAll
     static void initDriverManager() {
-        SLF4JBridgeHandler
+        SLF4JBridgeHandler.removeHandlersForRootLogger();
+        SLF4JBridgeHandler.install();
         System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
         WebDriverManager.chromedriver().setup();
     }

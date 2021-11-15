@@ -32,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.SimpleFixtureTest.testHeader">
+  <component name="RunManager" selected="JUnit.SimpleFixtureTest">
     <configuration name="SimpleFixtureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="swd-java-2021-11-15" />
       <extension name="coverage">
@@ -114,8 +114,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SimpleFixtureTest.testHeader" />
         <item itemvalue="JUnit.SimpleFixtureTest" />
+        <item itemvalue="JUnit.SimpleFixtureTest.testHeader" />
         <item itemvalue="JUnit.SimpleFixtureTest.testHeaderWithErasure" />
         <item itemvalue="JUnit.SimpleFixtureTest.testTitle" />
         <item itemvalue="JUnit.SimpleTest.testHeader" />
