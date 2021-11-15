@@ -1,1 +1,0 @@
-Statikus HTML oldal létrehozása
