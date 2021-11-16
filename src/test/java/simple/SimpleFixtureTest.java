@@ -1,5 +1,6 @@
 package simple;
 
+import io.github.artsok.RepeatedIfExceptionsTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.AfterEach;
@@ -35,6 +36,7 @@ class SimpleFixtureTest {
     static void initDriverManager() {
         SLF4JBridgeHandler.removeHandlersForRootLogger();
         SLF4JBridgeHandler.install();
+
         System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
         WebDriverManager.chromedriver().setup();
     }
@@ -52,6 +54,7 @@ class SimpleFixtureTest {
     }
 
     @Test
+//    @RepeatedIfExceptionsTest(repeats = 3)
     void testHeader() {
         log.info("Test header");
 

@@ -1,2 +1,14 @@
-package extension;public class LoggingExtension {
+package extension;
+
+import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.extension.BeforeEachCallback;
+import org.junit.jupiter.api.extension.ExtensionContext;
+
+@Slf4j
+public class LoggingExtension implements BeforeEachCallback {
+
+    @Override
+    public void beforeEach(ExtensionContext context) throws Exception {
+        log.debug(context.getDisplayName());
+    }
 }
